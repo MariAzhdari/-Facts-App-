@@ -5,7 +5,7 @@
     numberInput.addEventListener('input', getFactFetch);
     function getFactFetch(){
        let number =numberInput.value;
-
+//use fetch
        fetch('http://numbersapi.com/'+number)
        .then(response =>response.text())
        .then(data => {
